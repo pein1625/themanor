@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- vendor style-->
+        <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./vendor/swiper/swiper.min.css" />
+        <!-- custom style-->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                        <div class="header__elements">
+                            <button class="header__btn js-navbar-open"><span class="header__btn-text">ME<br />NU</span><span class="header__btn-bars"><span></span><span></span><span></span></span></button><a class="header__link js-contact" href="#!">Liên hệ đặt mua</a>
+                            <div class="header__nav"><a class="header__nav-link" href="#!"><i class="fa fa-fw fa-envelope-o"></i></a><a class="header__nav-link" href="#!"><i class="fa fa-fw fa-phone"></i></a><a class="header__nav-link" href="#!"><i class="fa fa-fw fa-facebook"></i></a></div>
+                        </div>
+                        <section class="navbar js-navbar">
+                            <div class="navbar__backdrop js-navbar-close"></div>
+                            <div class="navbar__wrapper">
+                                <div class="navbar__header">
+                                    <div class="navbar__title">MENU</div>
+                                    <button class="navbar__close js-navbar-close"><span>close</span></button>
+                                </div>
+                                <div class="navbar__body">
+                                    <ul class="menu menu-root">
+                                        <li class="menu-item"><a class="menu-link active" href="./index.html">Trang chủ</a>
+                                        </li>
+                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Về chúng tôi</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                            <ul class="menu menu-sub">
+                                                <li class="menu-item"><a class="menu-link" href="./about-detail.html">Tâm huyết chủ đầu tư</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./about-detail.html">Đối tác</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./apartments.html">Căn hộ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                            <ul class="menu menu-sub">
+                                                <li class="menu-item"><a class="menu-link" href="./apartment-detail.html">Căn hộ một phòng ngủ</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./apartment-detail.html">Căn hộ hai phòng ngủ</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./apartment-detail.html">Căn hộ ba phòng ngủ</a>
+                                                </li>
+                                                <li class="menu-item"><a class="menu-link" href="./apartment-detail.html">Căn hộ Duplex</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a class="menu-link" href="./news.html">Tin tức</a>
+                                        </li>
+                                        <li class="menu-item"><a class="menu-link" href="./contact.html">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="banner"><img class="banner__img" src="./images/banner-img.jpg" alt="" /></div>
+                <section class="section py-80">
+                    <div class="container">
+                        <h2 class="section__title">Liên hệ</h2>
+                        <div class="row">
+                            <div class="col-lg-6 mb-30">
+                                <section class="contact-info">
+                                    <h2 class="contact-info__title">The manor Lào Cai</h2>
+                                    <div class="contact-info__item"><i class="fa fa-fw fa-map-marker mr-2"></i><span>Số 2, Trần Hưng Đạo, khu đô thị The Manor Lào Cai, Bắc Cường, Lào Cai</span></div>
+                                    <div class="contact-info__item"><i class="fa fa-fw fa-phone mr-2"></i><a href="#!">0946332933</a></div>
+                                </section>
+                                <form class="contact-form">
+                                    <h2 class="contact-form__title">Đăng ký nhận tin</h2>
+                                    <div class="form-group">
+                                        <label>Họ và tên</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Số điện thoại</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Bạn quan tâm đến</label>
+                                        <div class="row gutter-20">
+                                            <div class="col-6 mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="checkbox-styled__text">Căn hộ một phòng ngủ</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="checkbox-styled__text">Căn hộ hai phòng ngủ</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="checkbox-styled__text">Căn hộ ba phòng ngủ</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 mt-2">
+                                                <label class="checkbox-styled">
+                                                    <input class="checkbox-styled__input" type="checkbox" name="checkbox" /><span class="checkbox-styled__icon"></span><span class="checkbox-styled__text">Căn hộ duplex</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group my-4">
+                                        <textarea class="form-control" rows="5" placeholder="200 ký tự"></textarea>
+                                    </div><a class="contact-form__btn button" href="#!">Gửi tin</a>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 mb-30">
+                                <div class="contact-map embed-responsive"><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.276387059152!2d105.7890845153546!3d21.021624293396805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab50f898373b%3A0xf94978347b40462!2zMjEwIFRydW5nIEvDrW5oLCBZw6puIEhvw6AsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1555514478680!5m2!1svi!2s' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__block">
+                            <div class="footer__content text-center"><a class="footer__logo" href="#!"><img src="./images/logo.png" alt="" /></a>
+                                <div class="footer__slogan">
+                                    <div>The Manor Tower Lào Cai</div>
+                                    <div>Sống thời thượng Vượng tương lai</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__content">
+                                <div class="footer__title">Liên hệ:</div>
+                                <div class="footer__label">THE MANOR LÀO CAI</div>
+                                <div class="footer__contact"><i class="fa fa-fw fa-map-marker"></i>
+                                    <div>Số 2, Trần Hưng Đạo, khu đô thị The Manor Lào Cai, Bắc Cường, Lào Cai</div>
+                                </div>
+                                <div class="footer__contact"><i class="fa fa-fw fa-phone"></i>
+                                    <div><a href="tel: 0946332933">0946332933</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="container"><span class="text-secondary">The Manor Tower</span> 2019, All Rights Reserved.</div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+        </div>
+        <!-- javascript library-->
+        <!-- vendor script-->
+        <script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./vendor/popper/popper.min.js"></script>
+        <script src="./vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="./vendor/swiper/swiper.min.js"></script>
+        <!-- custom script-->
+        <script src="./js/globals.js"></script>
+    </body>
+</html>
