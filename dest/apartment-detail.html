@@ -66,28 +66,267 @@
             <div class="page__content">
                 <!-- main content-->
                 <div class="banner"><img class="banner__img" src="./images/banner-img.jpg" alt="" /></div>
-                <ul class="nav apartment-tabs">
-                    <li class="nav-item"><a class="nav-link active" href="#apartment-detail-tab-1" data-toggle="tab">Căn hộ 1 phòng ngủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#apartment-detail-tab-2" data-toggle="tab">Căn hộ 2 phòng ngủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#apartment-detail-tab-3" data-toggle="tab">Căn hộ 3 phòng ngủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#apartment-detail-tab-4" data-toggle="tab">Căn hộ Duplex</a></li>
-                </ul>
+                <div class="apartment-tabs">
+                    <ul class="nav apartment-tabs__nav">
+                        <li class="nav-item"><a class="nav-link js-apartment-tab active" href="#apartment-detail-tab-1" data-toggle="tab">Căn hộ 1 phòng ngủ</a></li>
+                        <li class="nav-item"><a class="nav-link js-apartment-tab" href="#apartment-detail-tab-2" data-toggle="tab">Căn hộ 2 phòng ngủ</a></li>
+                        <li class="nav-item"><a class="nav-link js-apartment-tab" href="#apartment-detail-tab-3" data-toggle="tab">Căn hộ 3 phòng ngủ</a></li>
+                        <li class="nav-item"><a class="nav-link js-apartment-tab" href="#apartment-detail-tab-4" data-toggle="tab">Căn hộ Duplex</a></li>
+                    </ul>
+                </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="apartment-detail-tab-1">
-                        <section class="section">
+                        <section class="section pb-40">
                             <div class="container">
                                 <h2 class="section__title">Thông tin căn hộ</h2>
+                                <div class="apartment-detail">
+                                    <div class="row gutter-20">
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__frame"><img id="apartment-frame-1" src="./images/apartment-1.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__content">
+                                                <p>Căn hộ 1 phòng ngủ tại The Tower Lào Cai được thiết kế rất khoa học và hợp lý. Với diện tích khiêm tốn nhưng nhờ sự sắp xếp và bố trí các phòng hài hòa nên vẫn tạo không gian sống thoải mái cho gia chủ, đặc biệt là những người độc thân muốn tận hưởng cuộc sống tự do.<br />Căn hộ có đầy đủ các phòng chức năng gồm 1 phòng ngủ, 1 phòng tắm, 1 phòng khách kết hợp với bếp ăn tiện lợi. Còn gì tuyệt vời hơn khi mỗi sáng thức dậy, được ngắm nhìn sắc xanh bình yên xung quanh không gian sống của mình, một cảm giác tự do tự tại sau những phút giây hối hả của cuộc sống.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="image-slider-2">
+                                                <div class="image-slider-2__prev"><i class="fa fa-angle-left"></i></div>
+                                                <div class="image-slider-2__next"><i class="fa fa-angle-right"></i></div>
+                                                <div class="image-slider-2__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-1-1.jpg" data-target="#apartment-frame-1"><img src="./images/apartment-1-1.jpg" alt="" /></a></div>
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-1-2.jpg" data-target="#apartment-frame-1"><img src="./images/apartment-1-2.jpg" alt="" /></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__space"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </section>
-                        <section class="section">
+                        <section class="section pt-50">
                             <div class="container">
                                 <h2 class="section__title">Life style</h2>
+                                <div class="life-style">
+                                    <div class="row gutter-20">
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__frame"><img src="./images/life-style.jpg" alt="" id="life-style-img-2" /></div>
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error doloribus ea mollitia, voluptatem eius, aut numquam esse ducimus maxime velit pariatur alias repellat autem nam officiis tempora impedit sint necessitatibus.<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quaerat nesciunt. Mollitia facilis accusantium illo numquam expedita at ab, rerum, omnis laborum unde eum itaque animi minus exercitationem natus quidem?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-slider">
+                                    <div class="image-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-1.jpg" data-target="#life-style-img-1"><img src="./images/gallery-1.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-2.jpg" data-target="#life-style-img-1"><img src="./images/gallery-2.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-3.jpg" data-target="#life-style-img-1"><img src="./images/gallery-3.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-4.jpg" data-target="#life-style-img-1"><img src="./images/gallery-4.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-5.jpg" data-target="#life-style-img-1"><img src="./images/gallery-5.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-6.jpg" data-target="#life-style-img-1"><img src="./images/gallery-6.jpg" alt="" /></a></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>
-                    <div class="tab-pane" id="apartment-detail-tab-2"></div>
-                    <div class="tab-pane" id="apartment-detail-tab-3"></div>
-                    <div class="tab-pane" id="apartment-detail-tab-4"></div>
+                    <div class="tab-pane" id="apartment-detail-tab-2">
+                        <section class="section pb-40">
+                            <div class="container">
+                                <h2 class="section__title">Thông tin căn hộ</h2>
+                                <div class="apartment-detail">
+                                    <div class="row gutter-20">
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__frame"><img id="apartment-frame-2" src="./images/apartment-1.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__content">
+                                                <p>Với diện tích phù hợp để thiết kế các phòng chức năng và phòng ngủ cho gia đình có 4 thành viên đảm bảo không gian sống thoải mái và thỏa thích sắp đặt nội thất theo yêu thích.<br />Đặc biệt, căn hộ 2 phòng ngủ đón được nhiều nắng và gió tự nhiên nên vô cùng thoáng đãng sẽ là một chốn an cư bền vững cho những gia đình trẻ tại thành phố để có thể yên tâm an cư, lạc nghiệp.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="image-slider-2">
+                                                <div class="image-slider-2__prev"><i class="fa fa-angle-left"></i></div>
+                                                <div class="image-slider-2__next"><i class="fa fa-angle-right"></i></div>
+                                                <div class="image-slider-2__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-2-1.jpg" data-target="#apartment-frame-2"><img src="./images/apartment-2-1.jpg" alt="" /></a></div>
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-2-2.jpg" data-target="#apartment-frame-2"><img src="./images/apartment-2-2.jpg" alt="" /></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__space"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section pt-50">
+                            <div class="container">
+                                <h2 class="section__title">Life style</h2>
+                                <div class="life-style">
+                                    <div class="row gutter-20">
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__frame"><img src="./images/life-style.jpg" alt="" id="life-style-img-2" /></div>
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error doloribus ea mollitia, voluptatem eius, aut numquam esse ducimus maxime velit pariatur alias repellat autem nam officiis tempora impedit sint necessitatibus.<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quaerat nesciunt. Mollitia facilis accusantium illo numquam expedita at ab, rerum, omnis laborum unde eum itaque animi minus exercitationem natus quidem?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-slider">
+                                    <div class="image-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-1.jpg" data-target="#life-style-img-2"><img src="./images/gallery-1.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-2.jpg" data-target="#life-style-img-2"><img src="./images/gallery-2.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-3.jpg" data-target="#life-style-img-2"><img src="./images/gallery-3.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-4.jpg" data-target="#life-style-img-2"><img src="./images/gallery-4.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-5.jpg" data-target="#life-style-img-2"><img src="./images/gallery-5.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-6.jpg" data-target="#life-style-img-2"><img src="./images/gallery-6.jpg" alt="" /></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane" id="apartment-detail-tab-3">
+                        <section class="section pb-40">
+                            <div class="container">
+                                <h2 class="section__title">Thông tin căn hộ</h2>
+                                <div class="apartment-detail">
+                                    <div class="row gutter-20">
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__frame"><img id="apartment-frame-3" src="./images/apartment-1.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__content">
+                                                <p>Căn hộ 3 phòng ngủ dành cho gia đình có đông thành viên hơn hoặc có nhu cầu không gian riêng tư cao hơn.<br />Việc duy trì gia đình với nhiều thế hệ cùng sum vầy đã trở thành nếp sống lâu đời trong nhiều gia đình Việt. Nên lựa chọn một căn nhà cho 3 thế hệ vừa phải có không gian riêng tư cho từng thành viên lại vừa đảm bảo sự gắn kết, gần gũi, thân mật giữa các thế hệ trong gia đình.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="image-slider-2">
+                                                <div class="image-slider-2__prev"><i class="fa fa-angle-left"></i></div>
+                                                <div class="image-slider-2__next"><i class="fa fa-angle-right"></i></div>
+                                                <div class="image-slider-2__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-3-1.jpg" data-target="#apartment-frame-3"><img src="./images/apartment-3-1.jpg" alt="" /></a></div>
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-3-2.jpg" data-target="#apartment-frame-3"><img src="./images/apartment-3-2.jpg" alt="" /></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__space"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section pt-50">
+                            <div class="container">
+                                <h2 class="section__title">Life style</h2>
+                                <div class="life-style">
+                                    <div class="row gutter-20">
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__frame"><img src="./images/life-style.jpg" alt="" id="life-style-img-3" /></div>
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error doloribus ea mollitia, voluptatem eius, aut numquam esse ducimus maxime velit pariatur alias repellat autem nam officiis tempora impedit sint necessitatibus.<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quaerat nesciunt. Mollitia facilis accusantium illo numquam expedita at ab, rerum, omnis laborum unde eum itaque animi minus exercitationem natus quidem?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-slider">
+                                    <div class="image-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-1.jpg" data-target="#life-style-img-3"><img src="./images/gallery-1.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-2.jpg" data-target="#life-style-img-3"><img src="./images/gallery-2.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-3.jpg" data-target="#life-style-img-3"><img src="./images/gallery-3.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-4.jpg" data-target="#life-style-img-3"><img src="./images/gallery-4.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-5.jpg" data-target="#life-style-img-3"><img src="./images/gallery-5.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-6.jpg" data-target="#life-style-img-3"><img src="./images/gallery-6.jpg" alt="" /></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane" id="apartment-detail-tab-4">
+                        <section class="section pb-40">
+                            <div class="container">
+                                <h2 class="section__title">Thông tin căn hộ</h2>
+                                <div class="apartment-detail">
+                                    <div class="row gutter-20">
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__frame"><img id="apartment-frame-4" src="./images/apartment-1.jpg" alt="" /></div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__content">
+                                                <p>Nếu như Penthouse là căn hộ nằm ở tầng cao nhất của toà chung cư thì căn hộ Duplex chính là hình thức thiết kế căn hộ thông tầng giữa ít nhất 2 tầng liền kề trong cùng một toà nhà. Thông thường căn hộ Duplex được thiết kế tại tầng áp mái của một dự án căn hộ và trung tâm thương mại cao cấp. Chính vì thế căn hộ Duplex tại The Manor Tower Lào Cai mở tối đa góc nhìn với view rộng lớn, thoáng đãng, thiết kế kính cường lực tại các phần tiếp xúc ngoài trời, tận dụng tối đa nguồn ánh sáng tự nhiên. Nhờ thiết kế thông tầng, căn hộ Duplex tạo ra cho gia chủ cảm giác rất thoải mái so với căn hộ thông thường, đặc biệt phù hợp với những gia đình đông người, chủ nhà có thể thoải mái lên ý tưởng, thiết kế nội thất mà không lo bị giới hạn về diện tích.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="image-slider-2">
+                                                <div class="image-slider-2__prev"><i class="fa fa-angle-left"></i></div>
+                                                <div class="image-slider-2__next"><i class="fa fa-angle-right"></i></div>
+                                                <div class="image-slider-2__container swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-4-1.jpg" data-target="#apartment-frame-4"><img src="./images/apartment-4-1.jpg" alt="" /></a></div>
+                                                        <div class="swiper-slide"><a class="image-slider-2__frame js-gallery" href="./images/apartment-4-2.jpg" data-target="#apartment-frame-4"><img src="./images/apartment-4-2.jpg" alt="" /></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-20">
+                                            <div class="apartment-detail__space"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section pt-50">
+                            <div class="container">
+                                <h2 class="section__title">Life style</h2>
+                                <div class="life-style">
+                                    <div class="row gutter-20">
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__frame"><img src="./images/life-style.jpg" alt="" id="life-style-img-4" /></div>
+                                        </div>
+                                        <div class="col-lg-6 mb-20">
+                                            <div class="life-style__content">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error doloribus ea mollitia, voluptatem eius, aut numquam esse ducimus maxime velit pariatur alias repellat autem nam officiis tempora impedit sint necessitatibus.<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quaerat nesciunt. Mollitia facilis accusantium illo numquam expedita at ab, rerum, omnis laborum unde eum itaque animi minus exercitationem natus quidem?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-slider">
+                                    <div class="image-slider__container swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-1.jpg" data-target="#life-style-img-4"><img src="./images/gallery-1.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-2.jpg" data-target="#life-style-img-4"><img src="./images/gallery-2.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-3.jpg" data-target="#life-style-img-4"><img src="./images/gallery-3.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-4.jpg" data-target="#life-style-img-4"><img src="./images/gallery-4.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-5.jpg" data-target="#life-style-img-4"><img src="./images/gallery-5.jpg" alt="" /></a></div>
+                                            <div class="swiper-slide"><a class="image-slider__frame js-gallery" href="./images/gallery-6.jpg" data-target="#life-style-img-4"><img src="./images/gallery-6.jpg" alt="" /></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
             <!-- footer-->

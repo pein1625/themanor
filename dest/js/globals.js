@@ -28,6 +28,48 @@ $(function () {
 });
 
 $(function () {
+  var imageSlider = addSwiper(".image-slider", {
+    freeMode: true,
+    slidesPerView: "auto",
+    spaceBetween: 4,
+    loop: true,
+    speed: 500,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    }
+  });
+
+  var imageSlider2 = addSwiper(".image-slider-2", {
+    navigation: true,
+    slidesPerView: 2,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    }
+  });
+
+  $(".js-apartment-tab").on("shown.bs.tab", function () {
+    imageSlider.map(function (item) {
+      item.update();
+    });
+    imageSlider2.map(function (item) {
+      item.update();
+    });
+  });
+
+  $(".js-gallery").on("mouseenter click", function (e) {
+    e.preventDefault();
+    var href = $(this).attr("href");
+    var target = $(this).data("target");
+    console.log(href);
+    console.log($(target).length);
+    $(target).attr("src", href);
+  });
+});
+
+$(function () {
   addSwiper(".banner-slider", {
     speed: 1000,
     autoplay: {
