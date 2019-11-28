@@ -28,6 +28,28 @@ $(function () {
 });
 
 $(function () {
+  addSwiper(".news-slider", {
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+    slidesPerGroup: 3,
+    spaceBetween: 20,
+    speed: 1000,
+    pagination: true,
+    navigation: true,
+    breakpoints: {
+      991: {
+        slidesPerView: 2,
+        slidesPerGroup: 2
+      },
+      575: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      }
+    }
+  });
+});
+
+$(function () {
   var imageSlider = addSwiper(".image-slider", {
     freeMode: true,
     slidesPerView: "auto",
@@ -63,8 +85,6 @@ $(function () {
     e.preventDefault();
     var href = $(this).attr("href");
     var target = $(this).data("target");
-    console.log(href);
-    console.log($(target).length);
     $(target).attr("src", href);
   });
 });
