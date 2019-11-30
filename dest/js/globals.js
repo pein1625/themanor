@@ -50,6 +50,22 @@ $(function () {
 });
 
 $(function () {
+  addSwiper(".info-slider", {
+    direction: "vertical",
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    slidesPerView: 2,
+    loop: true,
+    navigation: true,
+    breakpoints: {
+      575: {
+        direction: "horizontal"
+      }
+    }
+  });
+});
+
+$(function () {
   var imageSlider = addSwiper(".image-slider", {
     freeMode: true,
     slidesPerView: "auto",
